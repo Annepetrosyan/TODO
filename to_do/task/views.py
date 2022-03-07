@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from task.forms import TaskForm, TaskModelForm
 from task.models import Task
 
@@ -50,7 +50,7 @@ def task_view(request, task_id):
     return render(request, "task/task_view.html", {"task_object": task})
 
 def create_task(request):
-        return home(request)
+        return redirect("home")
 
 
 
