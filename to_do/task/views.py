@@ -49,4 +49,9 @@ def task_view(request, task_id):
 
     return render(request, "task/task_view.html", {"task_object": task})
 
+def create_task(request):
+        return home(request)
+
+
+
 
